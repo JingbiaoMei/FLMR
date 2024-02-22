@@ -47,8 +47,8 @@ print(res)
 
 Create virtualenv:
 ```
-conda create -n FLMR_new python=3.10 -y
-conda activate FLMR_new
+conda create -n FLMR python=3.10 -y
+conda activate FLMR
 ```
 Install Pytorch:
 ```
@@ -75,13 +75,13 @@ pip install -e .
 
 Install ColBERT engine
 ```
-cd examples/research_projects/flmr-retrieval/third_party/ColBERT
+cd third_party/ColBERT
 pip install -e .
 ```
 
 Install other dependencies
 ```
-pip install ujson gitpython easydict ninja datasets
+pip install ujson gitpython easydict ninja datasets transformers
 ```
 
 ### Use the model directly
